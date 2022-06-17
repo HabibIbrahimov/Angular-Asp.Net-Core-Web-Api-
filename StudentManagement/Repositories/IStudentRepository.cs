@@ -8,6 +8,6 @@ namespace StudentManagement.Repositories
 {
    public interface IStudentRepository
     {
-        List<Student> GetStudents();
+         Task<List<Student>> GetStudentsAsync();
     }
 }

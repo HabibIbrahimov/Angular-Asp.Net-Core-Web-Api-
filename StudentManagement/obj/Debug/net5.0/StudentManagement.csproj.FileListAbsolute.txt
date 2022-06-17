@@ -58,3 +58,9 @@ C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\obj\Debug\net5.0\Stud
 C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\obj\Debug\net5.0\ref\StudentManagement.dll
 C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.pdb
 C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.genruntimeconfig.cache
+C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ihebi\Desktop\StudentManagement\StudentManagement\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using StudentManagement.DomainModels;
 using StudentManagement.Repositories;
 using System;
 using System.Collections.Generic;
@@ -11,16 +13,20 @@ namespace StudentManagement.Controllers
     public class StudentsController : Controller
     {
         private readonly IStudentRepository studentRepository;
-        public StudentsController(IStudentRepository studentRepository)
+        private readonly IMapper mapper;
+        public StudentsController(IStudentRepository studentRepository,IMapper mapper)
         {
             this.studentRepository = studentRepository;
+            this.mapper = mapper;
         }
 
         [HttpGet]
         [Route("[controller]")]
-        public IActionResult GetAllStudents()
+        public async Task<IActionResult> GetAllStudentsAsync()
         {
-            return Ok(studentRepository.GetStudents());
+            var students = await studentRepository.GetStudentsAsync();
+
+            return Ok(mapper.Map<List<Student>>(students));
         }
     }
 }
