@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement.Repositories
 {
-    interface IStudentRepository
+   public interface IStudentRepository
     {
         List<Student> GetStudents();
     }
