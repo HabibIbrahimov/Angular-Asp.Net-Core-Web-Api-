@@ -4,7 +4,13 @@
   </div>
 </div>
 
-
+<div class="container mt-1">
+  <div class="row end-xs">
+    <div class="col-xs-12 ">
+       <input type="text" class="search-input" placeholder="Ara" [(ngModel)]="filterString" (keyup)="filterStudents()">
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <div class="mt-1 mat-elevation-z8">
