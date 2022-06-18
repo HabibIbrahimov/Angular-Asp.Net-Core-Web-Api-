@@ -29,6 +29,10 @@ namespace StudentManagement
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+               {
+                   builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+               }));
 
             services.AddControllers();
             services.AddDbContext<StudentAdminContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StudentAdminPortalDb")));
@@ -54,6 +58,8 @@ namespace StudentManagement
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("MyPolicy");
 
             app.UseAuthorization();
 
